@@ -10,17 +10,20 @@ public static void main(String[] args) {
 	//fibo 4 = 3 -> = fibo(3) + fibo(2)
 	//fibo 5 = 5 -> = fibo(4) + fibo(3)
 	int fibo = fibonacci(num);
+	int fibo2 = fibonacci(num);
 	System.out.println("fibo of " + num + " = " + fibo);
+	System.out.println("fibo of " + num + " = " + fibo2);
 }
 public static int fibonacci(int num) {
 //01
-//    if (num <= 1) {
-//        return num;
-//    }
-//    return fibonacci(num - 1) + fibonacci(num - 2);
-//    //O(2^n)
-	
+    if (num <= 1) {
+        return num;
+    }
+    return fibonacci(num - 1) + fibonacci(num - 2);
+    //O(2^n)
+}
 //02
+    public static int fibonacci2(int num) {
 	 if (num <= 1) {
          return num;
      }
